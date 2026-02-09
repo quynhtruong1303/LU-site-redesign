@@ -4,10 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fran's Flowers | Boutique Flower Shop in San Francisco</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Google Fonts - Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <nav class="navbar">
+      <a href="#about">About Us</a>
+      <a href="about-fran.html">About Fran</a>
+      <a href="#specials">Specials</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
     <header>
       <div class="header-content">
         <h1><span class="accent">Fran's</span> Flowers</h1>
@@ -24,7 +36,7 @@
     </div>
 
     <main>
-      <section class="about-us">
+      <section id="about" class="about-us">
         <h2><span class="accent">About</span> Us</h2>
         <p>
           Fran's Flowers was founded in 1995 by Francine Miller to share joy,
@@ -37,7 +49,25 @@
         <p>Thank you for helping us grow kindness one flower at a time.</p>
       </section>
 
-      <section class="specials">
+      <section class="seasonal-picks">
+        <h2><span class="accent">Seasonal</span> Picks</h2>
+        <div class="seasonal-feature">
+          <img src="img/sunflowers.png" alt="Sunshine Sunflower Bouquet" />
+          <h3>Sunshine Sunflower Bouquet</h3>
+          <p>
+            Brighten any room with our stunning sunflower arrangement! Hand-picked
+            each morning, these golden blooms are guaranteed to bring warmth and
+            cheer. Perfect for celebrating summer birthdays, new beginnings, or
+            just because.
+          </p>
+          <p>
+            <strong>Features:</strong> 12 premium sunflowers with seasonal greenery
+          </p>
+          <span class="seasonal-badge">Only here 'til October!</span>
+        </div>
+      </section>
+
+      <section id="specials" class="specials">
         <h2><span class="accent">Weekly</span> Specials</h2>
         <div class="specials-list">
           <article class="special-offer">
@@ -63,7 +93,7 @@
         </div>
       </section>
 
-      <section class="visit-us">
+      <section id="visit" class="visit-us">
         <h2><span class="accent">Visit</span> Us</h2>
         <div class="contact-info">
           <p>Come in and say hi!</p>
@@ -80,10 +110,80 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
+
+      <section id="testimonials" class="testimonials">
+        <h2><span class="accent">Customer</span> Testimonials</h2>
+        <div class="testimonials-list">
+          <article class="testimonial">
+            <p>"Fran's Flowers never disappoints! The arrangements are always fresh and beautiful. It's my go to shop for any occasion."</p>
+            <p><strong>-Sarah C.</strong></p>
+          </article>
+          <article class="testimonial">
+            <p>"I love that Fran's Flowers gives back to the community. It makes my purchase feel even more meaningful."</p>
+            <p><strong>-David M.</strong></p>
+          </article>
+          <article class="testimonial">
+            <p>"The staff at Fran's Flowers are so friendly and helpful. They always go above and beyond to make sure I find the perfect bouquet."</p>
+            <p><strong>-Emily R.</strong></p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
       <div class="footer-content">
+        <!-- Left Column: Hours & Contact -->
+        <div class="footer-column">
+          <div class="footer-section">
+            <h3>Hours & Location</h3>
+            <p>Monday - Saturday: 9am - 7pm</p>
+            <p>Sunday: 10am - 5pm</p>
+            <p>123 Valencia Street, San Francisco, CA 94103</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p><a href="tel:+1234567890">123-456-7890</a></p>
+            <p><a href="mailto:hello@fransflowers.com">hello@fransflowers.com</a></p>
+          </div>
+        </div>
+
+        <!-- Right Column: Quick Links & Social Media -->
+        <div class="footer-column">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <nav class="footer-links">
+              <a href="#about">About Us</a>
+              <a href="#specials">Specials</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#visit">Visit Us</a>
+            </nav>
+          </div>
+
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
         <p>&copy; 2025 Fran's Flowers LLC.</p>
         <p>Brightening lives one flower at a time</p>
       </div>

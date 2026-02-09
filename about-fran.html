@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
     </nav>
 
@@ -24,15 +24,15 @@
       </div>
     </header>
 
-    <main>
-      <section class="about-fran-page">
+    <main id="main-content">
+      <section class="about-fran-page" aria-labelledby="about-fran-heading">
         <div class="about-fran-content">
           <div class="fran-image-container">
-            <img src="img/fran.png" alt="Francine Miller" />
+            <img src="img/fran.png" alt="Francine Miller, smiling founder and owner of Fran's Flowers, surrounded by beautiful flower arrangements" />
           </div>
 
           <div class="fran-story">
-            <h2><span class="accent">Meet</span> Francine Miller</h2>
+            <h2 id="about-fran-heading"><span class="accent">Meet</span> Francine Miller</h2>
             <p>
               Francine "Fran" Miller opened the doors to Fran's Flowers in 1995
               with a simple dream: to bring more beauty and joy to her beloved
@@ -76,7 +76,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="footer-content">
         <div class="footer-column">
           <div class="footer-section">
@@ -96,7 +96,7 @@
         <div class="footer-column">
           <div class="footer-section">
             <h3>Quick Links</h3>
-            <nav class="footer-links">
+            <nav class="footer-links" aria-label="Footer navigation">
               <a href="index.html">Home</a>
               <a href="index.html#about">About Us</a>
               <a href="index.html#specials">Specials</a>

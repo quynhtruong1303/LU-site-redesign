@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
       <a href="#about">About Us</a>
       <a href="about-fran.html">About Fran</a>
       <a href="#specials">Specials</a>
@@ -30,12 +30,12 @@
     <div id="hero-container">
       <img
         src="img/fran.png"
-        alt="Francine Miller, owner of Fran's Flowers"
+        alt="Francine Miller, smiling owner of Fran's Flowers, standing among colorful flower arrangements"
         class="hero-img"
       />
     </div>
 
-    <main>
+    <main id="main-content">
       <section id="about" class="about-us">
         <h2><span class="accent">About</span> Us</h2>
         <p>
@@ -49,10 +49,10 @@
         <p>Thank you for helping us grow kindness one flower at a time.</p>
       </section>
 
-      <section class="seasonal-picks">
-        <h2><span class="accent">Seasonal</span> Picks</h2>
+      <section class="seasonal-picks" aria-labelledby="seasonal-heading">
+        <h2 id="seasonal-heading"><span class="accent">Seasonal</span> Picks</h2>
         <div class="seasonal-feature">
-          <img src="img/sunflowers.png" alt="Sunshine Sunflower Bouquet" />
+          <img src="img/sunflowers.png" alt="Bright yellow sunflower bouquet with green stems in a clear vase" />
           <h3>Sunshine Sunflower Bouquet</h3>
           <p>
             Brighten any room with our stunning sunflower arrangement! Hand-picked
@@ -67,25 +67,25 @@
         </div>
       </section>
 
-      <section id="specials" class="specials">
-        <h2><span class="accent">Weekly</span> Specials</h2>
+      <section id="specials" class="specials" aria-labelledby="specials-heading">
+        <h2 id="specials-heading"><span class="accent">Weekly</span> Specials</h2>
         <div class="specials-list">
           <article class="special-offer">
-            <img src="img/potted_plant.png" alt="Ceramic Potted Herbs" />
+            <img src="img/potted_plant.png" alt="Small ceramic pot with fresh green herbs" />
             <h3>Ceramic Potted Herbs</h3>
             <p class="price-now">$7.99</p>
             <p class="price-was">Was $17.99</p>
           </article>
 
           <article class="special-offer">
-            <img src="img/wild_flowers.png" alt="Wildflower Explosion" />
+            <img src="img/wild_flowers.png" alt="Colorful mixed wildflower bouquet with purple, pink, and yellow blooms" />
             <h3>Wildflower Explosion</h3>
             <p class="price-now">$19.99</p>
             <p class="price-was">Was $29.99</p>
           </article>
 
           <article class="special-offer">
-            <img src="img/sunflowers.png" alt="Sunflower Delight" />
+            <img src="img/sunflowers.png" alt="Vibrant sunflower arrangement with large yellow blooms" />
             <h3>Sunflower Delight</h3>
             <p class="price-now">$12.99</p>
             <p class="price-was">Was $19.99</p>
@@ -111,8 +111,8 @@
         ></iframe>
       </section>
 
-      <section id="testimonials" class="testimonials">
-        <h2><span class="accent">Customer</span> Testimonials</h2>
+      <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+        <h2 id="testimonials-heading"><span class="accent">Customer</span> Testimonials</h2>
         <div class="testimonials-list">
           <article class="testimonial">
             <p>"Fran's Flowers never disappoints! The arrangements are always fresh and beautiful. It's my go to shop for any occasion."</p>
@@ -130,7 +130,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="footer-content">
         <!-- Left Column: Hours & Contact -->
         <div class="footer-column">
@@ -152,7 +152,7 @@
         <div class="footer-column">
           <div class="footer-section">
             <h3>Quick Links</h3>
-            <nav class="footer-links">
+            <nav class="footer-links" aria-label="Footer navigation">
               <a href="#about">About Us</a>
               <a href="#specials">Specials</a>
               <a href="#testimonials">Testimonials</a>
